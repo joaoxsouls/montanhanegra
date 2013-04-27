@@ -1,16 +1,21 @@
+html {
+    height: 97.5%;
+    border: 10px solid white;
+    overflow: hidden;
+}
 a {
-color: white;
+    color: white;
 }
 body {
-    margin: 0;
-    overflow: hidden;
     background-image: url(back.png);
     background-repeat: repeat;
 }
 #left, #right {
     position: absolute;
     height: 100%;
+    top: 0;
     width: 50%;
+
     z-index: -1;
 }
 #left {
@@ -36,7 +41,6 @@ body {
     margin-top: -300px;
     width: 800px;
     height: 522px;
-    border: 1px solid white;
     background-image: url(back.png);
 }
 #image {
@@ -54,7 +58,7 @@ body {
     position: absolute;
     top: -40px;
     left: 50%;
-    margin-left: -42px;
+    margin-left: -43px;
     z-index: 2;
     cursor: pointer;
 }
@@ -70,4 +74,11 @@ body {
     color: white;
 
     z-index: 0;
+}
+#signature {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    font-family: Helvetica;
 }

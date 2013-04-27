@@ -1,10 +1,14 @@
 $('#main').click(function(e) {
     var target = $(e.target),
-        img = $('.image'),
+        img = $('#image img'),
         src = img.attr('src'),
         targetId = target.attr('id'),
         current = parseInt(src.match(/\d{1,2}\.jpg$/));
-    if (targetId !== 'right' && targetId !== 'left') {
+    if (targetId !== 'right' && targetId !== 'left' && targetId !== 'logo') {
+        return;
+    }
+    if (target.attr('id') === 'logo') {
+        img.parent().toggle();
         return;
     }
     if (target.attr('id') === 'right' ) {

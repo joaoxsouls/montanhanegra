@@ -18,6 +18,12 @@ body {
 #right:hover , #left:hover {
     background: red;
 }
+#right:hover {
+    cursor: e-resize;
+}
+#left:hover {
+    cursor: w-resize;
+}
 #placeholder {
     position: absolute;
     top: 50%;

@@ -72,13 +72,12 @@ body {
     text-align: center;
     font-family: Helvetica;
     color: white;
-
     z-index: 0;
 }
 #signature {
     position: absolute;
-    bottom: 10px;
-    right: 10px;
+    bottom: 15px;
+    right: 15px;
     color: white;
     font-family: Helvetica;
 }

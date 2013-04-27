@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-image: url(back.png);
+    background-repeat: repeat;
+}
+
+.left {
+    width: 50%;
+    height: 1000px;
+    float: left;
+}
+.right {
+    float: left;
+    height: 1000px;
+    width: 50%
+}
+.right:hover , .left:hover {
+    background: red;
+}
+img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -400px;
+    margin-top: -261px;
+}

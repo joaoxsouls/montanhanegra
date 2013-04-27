@@ -12,17 +12,17 @@ body {
 }
 #left, #right {
     position: absolute;
-    height: 100%;
-    top: 0;
+    height: 97.5%;
+    top: 10px;
     width: 50%;
 
     z-index: -1;
 }
 #left {
-    left: 0px;
+    left: 10px;
 }
 #right {
-    right: 0px;
+    right: 10px;
 }
 #right:hover , #left:hover {
     background: red;

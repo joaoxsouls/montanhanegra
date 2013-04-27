@@ -1,24 +1,23 @@
 $('#main').click(function(e) {
     var target = $(e.target),
-        img = $('img'),
+        img = $('.image'),
         src = img.attr('src'),
-        targetClass = target.attr('class'),
+        targetId = target.attr('id'),
         current = parseInt(src.match(/\d{1,2}\.jpg$/));
-    console.log(img);
-    if (targetClass !== 'right' && targetClass !== 'left') {
+    if (targetId !== 'right' && targetId !== 'left') {
         return;
     }
-    if (target.attr('class') === 'right' ) {
-        if (current == 60) {
+    if (target.attr('id') === 'right' ) {
+        if (current == 57) {
             current = 1;
         }
         else {
             current = current + 1;
         }
     }
-    if (target.attr('class') === 'left' ) {
+    if (target.attr('id') === 'left' ) {
         if (current == 1) {
-            current = 60;
+            current = 57;
         }
         else {
             current = current - 1;
@@ -26,9 +25,5 @@ $('#main').click(function(e) {
     }
     img.hide();
     img.attr('src', 'img/' + current + '.jpg');
-    window.setTimeout(function () {
-        img.css('margin-left', '-' + img.width()/2 + 'px');
-        img.css('margin-top', '-' + img.height()/2 + 'px');
-        img.fadeIn('slow');
-    }, 100);
+    img.fadeIn();
 });

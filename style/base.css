@@ -5,23 +5,32 @@ body {
     background-repeat: repeat;
 }
 
-.left {
+#left {
     width: 50%;
     height: 1000px;
     float: left;
 }
-.right {
+#right {
     float: left;
     height: 1000px;
     width: 50%
 }
-.right:hover , .left:hover {
+#right:hover , #left:hover {
     background: red;
 }
-img {
+#placeholder {
     position: absolute;
     top: 50%;
     left: 50%;
     margin-left: -400px;
-    margin-top: -261px;
+    margin-top: -300px;
+    width: 800px;
+    height: 522px;
+}
+#logo {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    margin-left: -42px;
+    z-index: 2;
 }

@@ -9,7 +9,7 @@ $(document).delegate('#left, #right, #logo', 'click', function(e) {
         return;
     }
     if (target.attr('id') === 'right' ) {
-        if (current == 57) {
+        if (current == 52) {
             current = 1;
         }
         else {
@@ -18,7 +18,7 @@ $(document).delegate('#left, #right, #logo', 'click', function(e) {
     }
     if (target.attr('id') === 'left' ) {
         if (current == 1) {
-            current = 57;
+            current = 52;
         }
         else {
             current = current - 1;

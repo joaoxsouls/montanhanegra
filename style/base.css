@@ -14,8 +14,7 @@ body {
     position: absolute;
     height: 97.5%;
     top: 10px;
-    width: 50%;
-
+    width: 49.5%;
     z-index: -1;
 }
 #left {
@@ -58,7 +57,7 @@ body {
     position: absolute;
     top: -40px;
     left: 50%;
-    margin-left: -43px;
+    margin-left: -42.5px;
     z-index: 2;
     cursor: pointer;
 }
@@ -78,7 +77,7 @@ body {
     position: absolute;
     bottom: 40px;
     left: 50%;
-    margin-left: -30px;
+    margin-left: -19px;
     color: white;
     font-family: Helvetica;
 }

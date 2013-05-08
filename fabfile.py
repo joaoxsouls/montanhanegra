@@ -1,7 +1,7 @@
 import os
 from fabric.api import *
-
-env.hosts = ['joaoxsouls@joaoxsouls.webfactional.com']
+env.use_ssh_config = True
+env.hosts = ['webfaction']
 
 def deploy():
     code_dir = '~/webapps/montanhanegra/'
